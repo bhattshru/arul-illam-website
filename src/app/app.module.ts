@@ -4,7 +4,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 import { AppComponent } from './app.component';
-import { RoutedPages, AppRoutingModule } from './app.routes';
+import { RoutedPages, CustomComponents, AppRoutingModule } from './app.routes';
 import { MaterialModule } from './app.material-ui.module';
 import { ContactUsComponent } from './common/contact-us/contact-us.component';
 
@@ -12,6 +12,7 @@ import { ContactUsComponent } from './common/contact-us/contact-us.component';
   declarations: [
     AppComponent,
     RoutedPages,
+    CustomComponents,
     ContactUsComponent
   ],
   imports: [
