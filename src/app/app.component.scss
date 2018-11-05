@@ -4,13 +4,12 @@
     button {
         font-weight: 600;
         color: $common-font-color;
+        margin: 0 10px;
     }
     .activeHeader {
         button {
             background-color: $common-font-color;
             color: $font-white;
-            margin: 0 10px;
-            
         }
     }
 }
