@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
+  contactViewType = "CONTACT_WITHOUT_MAP";
+  
   constructor() { }
 
   ngOnInit() {

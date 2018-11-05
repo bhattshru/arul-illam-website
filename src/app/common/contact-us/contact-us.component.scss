@@ -1,0 +1,19 @@
+@import '../../../assets/styles/variables.scss';
+
+.address-map-location{
+  height: 100%;
+  width: 100%;
+}
+
+.contact-details-container{
+  background: $primary-color;
+  color: $font-white;
+  text-align: center;
+
+
+  .contact{
+    display: flex;
+    justify-content: center;
+  }
+
+}
