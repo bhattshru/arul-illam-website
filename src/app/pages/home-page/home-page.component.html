@@ -1,3 +1,44 @@
-<div class="contact-section my-5">
-  <app-contact-us [type]="contactViewType"></app-contact-us>
+<div class="home-page-container">
+
+    <div class="carousal-container">
+        <!-- <app-home-page-carousel></app-home-page-carousel> -->
+    </div>
+    
+    <div class="our-story-container">
+        <p class="pink">Our Story</p>
+        <p class="our-story-content">{{ourStoryContent1}}</p>
+        <p class="our-story-content">{{ourStoryContent2}}</p>
+        <div class="parent">
+            <a href="" class="know-more-link">Know more about us</a>
+        </div>
+      </div>
+
+
+      <div class="get-involved-container">
+          <p class="pink">Get Involved</p>
+          <div class="get-involved-flex-container diplay-flex">
+            <div class="get-involved-image">
+              <img class="my-image" src ="assets/images/pic4.png">
+            </div>
+            <div class="get-involved-image">
+              <img class="my-image" src ="assets/images/pic3.png">
+            </div>
+            <div class="get-involved-image">
+              <img class="my-image" src ="assets/images/pic4.png">
+            </div>
+            <div class="get-involved-image">
+              <img class="my-image" src ="assets/images/pic3.png">
+            </div>
+          </div>
+        </div>
+
+
+    <div class="contact-section my-5">
+        <p class="pink">Contact Us</p>
+        <app-contact-us [type]="contactViewType"></app-contact-us>
+      </div>
+
 </div>
+
+
+
