@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { RoutedPages, CustomComponents, AppRoutingModule } from './app.routes';
 import { MaterialModule } from './app.material-ui.module';
 import { ContactUsComponent } from './common/contact-us/contact-us.component';
+import { HomePageCarouselComponent } from './components/home-page-carousel/home-page-carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoutedPages,
     CustomComponents,
-    ContactUsComponent
+    ContactUsComponent,
+    HomePageCarouselComponent
   ],
   imports: [
     BrowserModule,
