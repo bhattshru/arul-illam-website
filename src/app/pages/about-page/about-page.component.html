@@ -1,14 +1,16 @@
 <div class="row">
   <div class="col-12 ">
-    <div class="about-us-pic">
-
+    <div class="about-us-pic"
+         [ngStyle]="{ 'background-image': 'url(' + aboutImage + ')'}">
     </div>
-    <!-- <img src="../../../assets/images/about-us.jpg"
-         alt="logo" /> -->
-
+    <div class="p-5">
+      <p>
+        {{aboutContent}}
+      </p>
+    </div>
     <app-crew-list-slider></app-crew-list-slider>
   </div>
 </div>
-<div class="my-5">
+<div>
   <app-contact-us [type]="contactViewType"></app-contact-us>
 </div>

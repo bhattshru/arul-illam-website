@@ -8,6 +8,7 @@ import { RoutedPages, CustomComponents, AppRoutingModule } from './app.routes';
 import { MaterialModule } from './app.material-ui.module';
 import { ContactUsComponent } from './common/contact-us/contact-us.component';
 import { HomePageCarouselComponent } from './components/home-page-carousel/home-page-carousel.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomePageCarouselComponent } from './components/home-page-carousel/home-
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-     AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

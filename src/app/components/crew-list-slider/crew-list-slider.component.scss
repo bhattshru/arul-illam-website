@@ -1,0 +1,46 @@
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:after,
+.strike > span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: red;
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.crew-profile-list {
+  display: flex;
+}
+
+.crew-profile {
+  align-items: center;
+  text-align: center;
+  flex: 1;
+
+  & > img {
+    height: 270px;
+    width: 250px;
+  }
+}

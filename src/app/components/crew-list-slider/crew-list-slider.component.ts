@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrewListSliderComponent implements OnInit {
 
+
+  crewProfileList: Object[] = [{
+
+    "name": "John Do",
+    "thumbnailURL": "../../../assets/images/tc1.jpg",
+    "designation": "Founder"
+
+  }
+  ];
+
   constructor() { }
 
   ngOnInit() {

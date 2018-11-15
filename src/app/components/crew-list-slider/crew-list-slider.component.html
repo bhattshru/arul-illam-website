@@ -1,3 +1,24 @@
-<p>
-  crew-list-slider works!
-</p>
+<div class="row">
+  <div class="strike col-12">
+    <span>THE CREW</span>
+  </div>
+  <div class="col-12 ">
+
+    <div class="row my-2 p-5 crew-profile-list">
+
+      <div class="crew-profile"
+           *ngFor="let crewProfile of crewProfileList">
+           
+        <img [src]="crewProfile.thumbnailURL" />
+        <div class="">
+          <div>{{crewProfile.name}}</div>
+          <div>{{crewProfile.designation}}</div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
