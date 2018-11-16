@@ -8,11 +8,11 @@
 
       <div class="crew-profile"
            *ngFor="let crewProfile of crewProfileList">
-           
+
         <img [src]="crewProfile.thumbnailURL" />
-        <div class="">
+        <div class="mt-1">
           <div>{{crewProfile.name}}</div>
-          <div>{{crewProfile.designation}}</div>
+          <div style="font-size:.7rem;">{{crewProfile.designation}}</div>
         </div>
 
       </div>

@@ -8,9 +8,28 @@
         {{aboutContent}}
       </p>
     </div>
-    <app-crew-list-slider></app-crew-list-slider>
+    <div class="row px-5">
+      <div class="col-12">
+
+        <div class="row mb-5">
+          <div class="col-6 pr-2 ">
+            <app-event-list></app-event-list>
+          </div>
+          <div class="col-6 pl-2">
+            <app-overall-info></app-overall-info>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12">
+        <app-crew-list-slider></app-crew-list-slider>
+      </div>
+    </div>
+
   </div>
 </div>
+
 <div>
   <app-contact-us [type]="contactViewType"></app-contact-us>
 </div>

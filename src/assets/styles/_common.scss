@@ -1,0 +1,35 @@
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:after,
+.strike > span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 2px;
+  background: #0D305C;
+}
+
+.strike > span {
+  color: #B61786;
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}

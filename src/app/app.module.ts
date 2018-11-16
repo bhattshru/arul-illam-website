@@ -6,9 +6,13 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { RoutedPages, CustomComponents, AppRoutingModule } from './app.routes';
 import { MaterialModule } from './app.material-ui.module';
+import { HttpModule } from '@angular/http';
+
+
 import { ContactUsComponent } from './common/contact-us/contact-us.component';
 import { HomePageCarouselComponent } from './components/home-page-carousel/home-page-carousel.component';
-import { HttpModule } from '@angular/http';
+import { EventListComponent } from './components/event-list/event-list.component';
+import { OverallInfoComponent } from './components/overall-info/overall-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,9 @@ import { HttpModule } from '@angular/http';
     RoutedPages,
     CustomComponents,
     ContactUsComponent,
-    HomePageCarouselComponent
+    HomePageCarouselComponent,
+    EventListComponent,
+    OverallInfoComponent
   ],
   imports: [
     BrowserModule,
