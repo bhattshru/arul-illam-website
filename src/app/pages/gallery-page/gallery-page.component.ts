@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryPageComponent implements OnInit {
 
-  constructor() { }
+  url: string;
+  constructor() { 
+    this.url = location.origin + "/assets/images/gallery-processed-images/data.json";
+  }
 
   ngOnInit() {
-  }
+  } 
 
 }
