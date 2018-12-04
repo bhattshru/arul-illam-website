@@ -13,12 +13,10 @@ export class AboutPageComponent implements OnInit {
 
   contactViewType = "CONTACT_WITHOUT_MAP";
   private _aboutUsContentURL = '//arulillam-cms.herokuapp.com/our-story';
-  private _eventsContentURL = '//arulillam-cms.herokuapp.com/events';
 
   @Input()
   aboutContent: string;
   aboutImage: string;
-  events : string;
 
 
 
