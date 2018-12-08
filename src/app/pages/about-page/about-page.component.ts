@@ -12,7 +12,7 @@ import { Input } from '@angular/core';
 export class AboutPageComponent implements OnInit {
 
   contactViewType = "CONTACT_WITHOUT_MAP";
-  private _aboutUsContentURL = '//arulillam-cms.herokuapp.com/AboutScreen';
+  private _aboutUsContentURL = '//arulillam-cms.herokuapp.com/our-story';
 
   @Input()
   aboutContent: string;
