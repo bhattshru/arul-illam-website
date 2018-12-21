@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GalleryServiceService } from 'src/app/services/gallery/gallery-service.service';
 
 @Component({
   selector: 'app-gallery-page',
@@ -6,13 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery-page.component.scss']
 })
 export class GalleryPageComponent implements OnInit {
+  url: string; 
+  galleryObject: any;
+  images: Array<any>;
 
-  url: string;
-  constructor() { 
-    this.url = location.origin + "/assets/images/gallery-processed-images/data.json";
+  constructor(private galleryService: GalleryServiceService) { 
+    this.galleryObject = [];
   }
 
   ngOnInit() {
+    this.getGalleryObject();
   } 
+  
+  getGalleryObject () {
+    this.galleryService.getGalleryImages().then(data => {
+      this.images = JSON.parse(data['images']);
+    }).catch(err => {
+      console.log(err);
+    });
+  }
 
 }
+ 

@@ -1,8 +1,12 @@
-<div class="px-3 py-5">
-    <gallery 
-    [metadataUri]="url" 
-    [flexBorderSize]="3" 
-    [flexImageSize]="7"
-    [maxRowsPerPage]="3">
-    </gallery>
-</div> 
+
+<div class="galleryContainer m-5">
+    <div class="row" *ngIf="images && images.length > 0">
+            <ng-container *ngFor="let image of images">
+                <div class="block">
+                    <a [href]="image.url" target="_blank">
+                        <img [alt]="image.description" [src]="image.img"/>
+                    </a>
+                </div>  
+            </ng-container>
+    </div>
+</div>
