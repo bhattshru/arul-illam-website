@@ -14,6 +14,8 @@ import { OverallInfoComponent } from './components/overall-info/overall-info.com
 import { GalleryServiceService } from './services/gallery/gallery-service.service';
 import { HttpUtilService } from './services/utils/http-util.service';
 import { LoggerService } from './services/utils/logger.service';
+import { LoaderComponent } from './components/loader/loader.component';
+import { LoaderService } from './services/loader/loader.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { LoggerService } from './services/utils/logger.service';
     ContactUsComponent,
     HomePageCarouselComponent,
     EventListComponent,
-    OverallInfoComponent
+    OverallInfoComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { LoggerService } from './services/utils/logger.service';
   providers: [
     GalleryServiceService,
     HttpUtilService,
-    LoggerService
+    LoggerService,
+    LoaderService
   ],
   bootstrap: [AppComponent]
 })

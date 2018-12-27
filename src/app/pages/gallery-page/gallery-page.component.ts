@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryServiceService } from 'src/app/services/gallery/gallery-service.service';
+import { LoaderService } from 'src/app/services/loader/loader.service';
 
 @Component({
   selector: 'app-gallery-page',
@@ -8,11 +9,11 @@ import { GalleryServiceService } from 'src/app/services/gallery/gallery-service.
 })
 export class GalleryPageComponent implements OnInit {
   url: string; 
-  galleryObject: any;
   images: Array<any>;
 
-  constructor(private galleryService: GalleryServiceService) { 
-    this.galleryObject = [];
+  constructor(
+    private galleryService: GalleryServiceService,
+    private loaderService: LoaderService) { 
   }
 
   ngOnInit() {
@@ -20,10 +21,13 @@ export class GalleryPageComponent implements OnInit {
   } 
   
   getGalleryObject () {
+    this.loaderService.show();
     this.galleryService.getGalleryImages().then(data => {
       this.images = JSON.parse(data['images']);
+      this.loaderService.hide();
     }).catch(err => {
       console.log(err);
+      this.loaderService.hide();
     });
   }
 
