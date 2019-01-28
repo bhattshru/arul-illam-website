@@ -14,10 +14,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
 export class HomePageCarouselComponent implements OnInit {
 
   private _aboutUsContentURL = '//arulillam-cms.herokuapp.com/carousel-data';
-  image1: string;
-  image2: string;
-  image3: string;
-  
+  carouselImages : any[];
 
   constructor(private http: Http, private loaderService: LoaderService) {
 
@@ -36,11 +33,7 @@ export class HomePageCarouselComponent implements OnInit {
     this.http.get(this._aboutUsContentURL, options).subscribe(response => {
       console.log(response);
       let jsonData = response.json();
-      
-        this.image1 = jsonData[0].imageurl;
-        this.image2 = jsonData[1].imageurl;
-        this.image3 = jsonData[2].imageurl;
-        
+        this.carouselImages = jsonData;        
         this.loaderService.hide();
     }, err => {
       console.log("User authentication failed!");
