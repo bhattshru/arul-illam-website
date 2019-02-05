@@ -1,12 +1,10 @@
-
 <div class="galleryContainer m-5">
     <div class="row" *ngIf="images && images.length > 0">
-            <ng-container *ngFor="let image of images">
-                <div class="block">
-                    <a [href]="image.url" target="_blank">
-                        <img [alt]="image.description" [src]="image.img"/>
-                    </a>
-                </div>  
-            </ng-container>
+        <ng-container *ngFor="let image of images">
+            <div class="block">
+                <!-- [href]="image.url" -->
+                <a> <img [alt]="image.description" (click)="openOverlay(image.img)" [src]="image.img" /> </a>
+            </div>
+        </ng-container>
+        <div class="overlay hide"> <a href="javascript:void(0)" class="closebtn" (click)="closeOverlay()">&times;</a> <img alt="opening image" [src]="showImg" /> </div>
     </div>
-</div>

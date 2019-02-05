@@ -1,6 +1,6 @@
 @import '../assets/styles/variables.scss';
-
 .headerMenu {
+    padding: 24px;
     button {
         font-weight: 600;
         color: $common-font-color;
@@ -14,9 +14,10 @@
     }
 }
 
-.navigation-router-container{
+.navigation-router-container {
     height: 95px;
     .logo {
-        width: 65px;
+        width: 255px;
     }
+    padding: 1px;
 }

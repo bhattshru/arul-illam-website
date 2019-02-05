@@ -10,6 +10,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
 export class GalleryPageComponent implements OnInit {
   url: string; 
   images: Array<any>;
+  showImg: string = '';
 
   constructor(
     private galleryService: GalleryServiceService,
@@ -29,6 +30,13 @@ export class GalleryPageComponent implements OnInit {
       console.log(err);
       this.loaderService.hide();
     });
+  }
+  openOverlay(img){
+    this.showImg = img;
+    $('.overlay').removeClass("hide");
+  }
+  closeOverlay(){
+    $('.overlay').addClass("hide");
   }
 
 }
