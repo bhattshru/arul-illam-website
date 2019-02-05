@@ -11,6 +11,7 @@ export class GalleryPageComponent implements OnInit {
   url: string; 
   images: Array<any>;
   showImg: string = '';
+  showOverLay: boolean = false;
 
   constructor(
     private galleryService: GalleryServiceService,
@@ -33,10 +34,10 @@ export class GalleryPageComponent implements OnInit {
   }
   openOverlay(img){
     this.showImg = img;
-    $('.overlay').removeClass("hide");
+    this.showOverLay = true;
   }
   closeOverlay(){
-    $('.overlay').addClass("hide");
+    this.showOverLay = false;
   }
 
 }
