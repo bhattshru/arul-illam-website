@@ -21,3 +21,19 @@
     }
     padding: 1px;
 }
+
+.mobilePage {
+    position: fixed;
+    top: 40%;
+    img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    span {
+        padding: 30px;
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+    }
+}

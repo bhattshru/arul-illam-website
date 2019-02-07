@@ -25,12 +25,19 @@
         background-color: rgba(0, 0, 0, 0.9);
         overflow-x: hidden;
         transition: 0.5s;
-    }
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-        color: red;
+        .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: red;
+        }
+        img {
+            max-height: calc(100vh - 50px);
+            margin: 50px auto;
+            max-width: 80%;
+            display: block;
+            vertical-align: middle;
+        }
     }
 }

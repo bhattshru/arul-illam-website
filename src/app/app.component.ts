@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  webShow = true;
+  ngOnInit() {
+    if (window.screen.width <= 600) { // 768px portrait
+        this.webShow = false;
+    }
+  }
   
 }
