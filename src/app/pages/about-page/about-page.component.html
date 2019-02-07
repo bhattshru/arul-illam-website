@@ -1,61 +1,41 @@
 <div class="">
-  <div class="col-12 ">
-    <div class="about-us-pic" id="about-us-pic"
-         [ngStyle]="{ 'background-image': 'url(' + aboutImage + ')'}">
-    </div>
-    <div class="p-5">
-      <h2>What we are!</h2>
-      <p>
-        Arul IllamTrust(Thambi Illam Children Home) was started in the year 2011 with the focus of eradicating the poverty and enables the needy kids to shine in their future.
-      </p>
-      <p>
-        Founder primarily focused on the below factors:-
-      </p>
-      <ul class="ml-5">
-        <li>Kids Education</li>
-        <li>Welfare of the Kids</li>
-        <li>To Walk along with their Dreams</li>
-        <li>Kids Health & safety</li>
-        <li>Nurture the kids to live better</li>
-        <li>Enable the kids in their extra curricular activities</li>
-        <li>Kids Empowerment and Growth</li>
-      </ul>
-
-      <h2 class="mt-5">Our Approach</h2>
-
-      <div class="my-2 text-center">
-
-
-        <img class="my-image text-center"
-             src="../../../assets/images/approach.png" />
-        <div>
-          <i>We ensure the children’s gets all the above 12 benefits in our Home.</i>
-
+    <div class="col-12 ">
+        <div class="about-us-pic" id="about-us-pic" [ngStyle]="{ 'background-image': 'url(' + aboutImage + ')'}"> </div>
+        <div class="p-5">
+            <h2>What we are!</h2>
+            <p> Arul IllamTrust (Thambi Illam Children Home) was started in the year 2011 with the focus of eradicating the poverty and enables the needy kids to shine in their future. </p>
+            <p> Founder primarily focused on the below factors:- </p>
+            <ul class="ml-5">
+                <li>Kids Education</li>
+                <li>Welfare of the Kids</li>
+                <li>To Walk along with their Dreams</li>
+                <li>Kids Health & safety</li>
+                <li>Nurture the kids to live better</li>
+                <li>Enable the kids in their extra curricular activities</li>
+                <li>Kids Empowerment and Growth</li>
+            </ul>
+            <h2 class="mt-5">Our Approach</h2>
+            <div class="my-2 text-center"> <img class="my-image text-center" src="../../../assets/images/approach.png" />
+                <div> <i>We ensure the children’s gets all the above 12 benefits in our Home.</i> </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="row px-5">
-      <div class="col-12">
-
-        <div class="row mb-5">
-          <div class="col-6 pr-2 ">
-            <app-event-list></app-event-list>
-          </div>
-          <div class="col-6 pl-2">
-            <app-overall-info></app-overall-info>
-          </div>
+        <div class="row px-5">
+            <div class="col-12">
+                <div class="row mb-5">
+                    <div class="col-6 pr-2 ">
+                        <app-event-list></app-event-list>
+                    </div>
+                    <div class="col-6 pl-2">
+                        <app-overall-info></app-overall-info>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <app-crew-list-slider></app-crew-list-slider>
+            </div>
         </div>
-      </div>
-
-
-      <div class="col-12">
-        <app-crew-list-slider></app-crew-list-slider>
-      </div>
     </div>
-
-  </div>
 </div>
-
 <div>
-  <app-contact-us [type]="contactViewType"></app-contact-us>
+    <app-contact-us [type]="contactViewType"></app-contact-us>
 </div>

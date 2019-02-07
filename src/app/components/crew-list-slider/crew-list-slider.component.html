@@ -1,24 +1,16 @@
 <div class="row">
-  <div class="strike col-12">
-    <span>THE CREW</span>
-  </div>
-  <div class="col-12 ">
-
-    <div class="row my-2 p-5 crew-profile-list">
-
-      <div class="crew-profile"
-           *ngFor="let crewProfile of crewProfileList">
-
-        <img [src]="crewProfile.thumbnailURL" />
-        <div class="mt-1">
-          <div>{{crewProfile.name}}</div>
-          <div style="font-size:.7rem;">{{crewProfile.designation}}</div>
+    <div class="strike col-12"> <span>Message from the Founder</span> </div>
+    <div class="col-12 ">
+        <div class="row my-2 p-5 crew-profile-list">
+            <div class="col-3 pr-2">
+                <div class="crew-profile" *ngFor="let crewProfile of crewProfileList"> <img [src]="crewProfile.thumbnailURL" />
+                    <div class="mt-1">
+                        <div>{{crewProfile.name}}</div>
+                        <div style="font-size:.7rem;">{{crewProfile.designation}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 pr-2 founder-message">I was a Volunteer for one of the Children’s Home and I got inspired & decided to set up the New Home. Because I thought it would be an effective way to raise a fund and help the children. I also believe that it is essential to work with local organizations as this will ensure that we provide the right help depending on the children’s needs, and will also allow development to be sustainable. Being a small Charity, we are able to work very closely with the organizations we support, and can then really see the differences that are being made. I want to thank everyone who has supported us so far, and would love to hear from anyone who would like to get involved with making a real difference to the lives of these children. We place on records our appreciation and commendable commitments for all staff in various capacity who have sacrificed and elevated service in the professional realm. With gained experience we are going to plunge ourselves in conservation of Humanity, nature etc. We are open to accommodate all relevant strategies to reach our end result of empowering. It is encouraging to witness the resourcefulness of the Home which has been helping the kids in all practical opportunities </div>
         </div>
-
-      </div>
-
-
-
     </div>
-  </div>
 </div>

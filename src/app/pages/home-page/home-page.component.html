@@ -1,44 +1,27 @@
 <div class="home-page-container">
-
     <div class="carousal-container">
-      <app-home-page-carousel></app-home-page-carousel>
+        <app-home-page-carousel></app-home-page-carousel>
     </div>
-
-<div class="home-page-padding">
-    <div class="our-story-container">
-        <p class="pink">Our Story</p>
-        <p class="our-story-content">{{ourStoryContent1}}</p>
-        <p class="our-story-content">{{ourStoryContent2}}</p>
-        <div class="know-more-link">
-          <a href="">Know more about us</a>
+    <div class="home-page-padding">
+        <div class="our-story-container">
+            <p class="pink">Our Story</p>
+            <p class="our-story-content">{{ourStoryContent1}}</p>
+            <p class="our-story-content">{{ourStoryContent2}}</p>
+            <div class="know-more-link"> <a href="/about">Know more about us</a> </div>
+            <div class="clear-float"></div>
         </div>
-        <div class="clear-float"></div>
-      </div>
-
-
-      <div class="get-involved-container d-none">
-          <p class="pink">Get Involved</p>
-          <div class="get-involved-flex-container diplay-flex">
-            <div class="get-involved-image">
-              <img class="my-image" src ="assets/images/pic4.png">
+        <div class="get-involved-container d-none">
+            <p class="pink">Get Involved</p>
+            <div class="get-involved-flex-container diplay-flex">
+                <div class="get-involved-image"> <img class="my-image" src="assets/images/pic4.png"> </div>
+                <div class="get-involved-image"> <img class="my-image" src="assets/images/pic3.png"> </div>
+                <div class="get-involved-image"> <img class="my-image" src="assets/images/pic4.png"> </div>
+                <div class="get-involved-image"> <img class="my-image" src="assets/images/pic3.png"> </div>
             </div>
-            <div class="get-involved-image">
-              <img class="my-image" src ="assets/images/pic3.png">
-            </div>
-            <div class="get-involved-image">
-              <img class="my-image" src ="assets/images/pic4.png">
-            </div>
-            <div class="get-involved-image">
-              <img class="my-image" src ="assets/images/pic3.png">
-            </div>
-          </div>
         </div>
-
-
-    <div class="contact-section my-5">
-        <p class="pink">Contact Us</p>
-        <app-contact-us [type]="contactViewType"></app-contact-us>
+        <div class="contact-section my-5">
+            <p class="pink">Contact Us</p>
+            <app-contact-us [type]="contactViewType"></app-contact-us>
+        </div>
     </div>
-  </div>
-
 </div>

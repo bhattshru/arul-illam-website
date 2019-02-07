@@ -10,7 +10,7 @@ export class CrewListSliderComponent implements OnInit {
 
   crewProfileList: Object[] = [{
 
-    "name": "Mr. Arul Doss",
+    "name": "Mr. S Arul Dass",
     "thumbnailURL": "../../../assets/images/arul_doss.jpg",
     "designation": "Founder"
 

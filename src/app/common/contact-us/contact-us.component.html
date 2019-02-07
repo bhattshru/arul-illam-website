@@ -1,88 +1,64 @@
 <!-- Contact Details View with Map Location Starts -->
-
-<div *ngIf="type === CONTACT_WITH_MAP"
-     class="row h-100 m-0">
-  <div class="col-6 p-0">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7250449779167!2d80.10143531527406!3d12.861027320773635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52589b2f9a1807%3A0xa2e85d1d35c6f2ba!2sArul+illam+Trust%2C+Kolapakkam%2C+Tamilnadu!5e0!3m2!1sen!2sin!4v1544344244141"
-            class="address-map-location"
-            frameborder="0"
-            style="border:0"
-            allowfullscreen></iframe>
-  </div>
-  <div class="col-6 contact-details-container p-3">
-
-    <div class="d-flex h-100 flex-column justify-content-center align-items-center">
-
-      <address>
+<div *ngIf="type === CONTACT_WITH_MAP" class="row h-100 m-0">
+    <div class="col-6 p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7250449779167!2d80.10143531527406!3d12.861027320773635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52589b2f9a1807%3A0xa2e85d1d35c6f2ba!2sArul+illam+Trust%2C+Kolapakkam%2C+Tamilnadu!5e0!3m2!1sen!2sin!4v1544344244141" class="address-map-location" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-6 contact-details-container p-3">
+        <div class="d-flex h-100 flex-column justify-content-center align-items-center"> <address>
         <div> Arul Illam Trust (Thambi Illam Children's home)</div>
         <div> Periyar Street,Unamancheri, </div>
         <div> Kolapakkam, Vandalur (via),</div>
         <div> Chennai - 127</div>
         <div> Landmark: Opp to Unamancheri bus stand (terminals)</div>
       </address>
-
-      <div class="contact mb-4">
-        <div>Contact :</div>
-        <div>
-          <div> Mr S. Aruldass</div>
-          <div>+91 9952019230</div>
+            <div class="contact mb-4">
+                <div>Contact :</div>
+                <div>
+                    <div> Mr S. Arul Dass</div>
+                    <div>+91 9952019230</div>
+                </div>
+            </div>
+            <div class="mb-4"> <span>Email : </span> <span><a class="email" href="mailto:thambiillam@gmail.com">thambiillam@gmail.com</a></span> </div>
+            <div>
+                <a href="https://www.facebook.com/Arul-Illam-273977885991288/" target="_blank">
+                    <fa class="mr-3" name="facebook"></fa>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <fa class="mr-3" name="twitter"></fa>
+                </a>
+            </div>
         </div>
-      </div>
-
-      <div class="mb-4">
-        <span>Email : </span>
-        <span>example@gmail.com</span>
-      </div>
-
-      <div>
-        <fa class="mr-3"
-            name="facebook"></fa>
-        <fa class="mr-3"
-            name="twitter"></fa>
-      </div>
     </div>
-  </div>
 </div>
-
 <!-- Contact Details View with Map Location Ends -->
-
 <!-- Contact Details View without Map Location -->
-
-<div *ngIf="type === CONTACT_WITHOUT_MAP"
-     class="row h-100 w-100 ml-0">
-
-  <div class="col-12 contact-details-container w-100 p-3">
-
-    <div class="d-flex flex-row ">
-
-      <address class="flex-fill">
+<div *ngIf="type === CONTACT_WITHOUT_MAP" class="row h-100 w-100 ml-0">
+    <div class="col-12 contact-details-container w-100 p-3">
+        <div class="d-flex flex-row "> <address class="flex-fill">
           <div> Arul Illam Trust (Thambi Illam Children's home)</div>
           <div> Periyar Street,Unamancheri, </div>
           <div> Kolapakkam, Vandalur (via),</div>
           <div> Chennai - 127</div>
           <div> Landmark: Opp to Unamancheri bus stand (terminals)</div>
       </address>
-
-      <div class="contact mb-4 flex-fill">
-        <div>Contact :</div>
-        <div>
-          <div> Mr S. Aruldass</div>
-          <div>+91 9952019230</div>
+            <div class="contact mb-4 flex-fill">
+                <div>Contact :</div>
+                <div>
+                    <div> Mr S. Arul Dass</div>
+                    <div>+91 9952019230</div>
+                </div>
+            </div>
+            <div class="mb-4 flex-fill"> <span>Email : </span> <span><a class="email" href="mailto:thambiillam@gmail.com">thambiillam@gmail.com</a></span>
+                <div>
+                    <a href="https://www.facebook.com/Arul-Illam-273977885991288/" target="_blank">
+                        <fa class="mr-3" name="facebook"></fa>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <fa class="mr-3" name="twitter"></fa>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="mb-4 flex-fill">
-        <span>Email : </span>
-        <span>example@gmail.com</span>
-        <div>
-          <fa class="mr-3"
-              name="facebook"></fa>
-          <fa class="mr-3"
-              name="twitter"></fa>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
-
 <!-- Contact Details View without Map Location Ends-->
